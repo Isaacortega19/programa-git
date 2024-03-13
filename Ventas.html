@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Ventas.css"> 
+    <title>Ventas - Drugstore Payment</title>
+</head>
+<body>
+    <header class="banner">
+        <h1>Ventas</h1>
+    </header>
+    <main>
+         <h2>Registrar Venta</h2>
+         <div class="form-row">
+            <div class="form-item">
+                <div class="input-label">Cód Vendedor</div>
+                <div class="input-field">
+                    <input type="text" id="seller-code" name="seller-code" required>
+                </div>
+            </div>
+            
+            <div class="form-item">
+                <div class="input-label">Nombre Cliente:</div>
+                <div class="input-field">
+                    <input type="text" id="client-name" name="client-name" required>
+                </div>
+            </div>
+            
+            <div class="form-item">
+                <div class="input-label">Identificación:</div>
+                <div class="input-field">
+                    <input type="text" id="client-id" name="client-id" required>
+                </div>
+            </div>
+            
+            <div class="form-item">
+                <div class="input-label">Dirección:</div>
+                <div class="input-field">
+                    <input type="text" id="client-address" name="client-address" required>
+                </div>
+            </div>
+            
+            <div class="form-item">
+                <div class="input-label">Teléfono:</div>
+                <div class="input-field">
+                    <input type="text" id="client-phone" name="client-phone" required>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            <table border="1">
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <td>10254</td>
+                  </tr>
+                  <tr>
+                    <th>Nombre</th>
+                    <td>Acetaminofen</td>
+                  </tr>
+                  <tr>
+                    <th>Precio Unitario</th>
+                    <td>$ 1500</td>
+                    <tr>
+                    <th>Cantidad</th>
+                    <td></td>     
+                  </tr>
+                  <tr>
+                    <th>Iva</th>
+                    <td></td>     
+                  </tr>
+                  <tr>
+                    <th>Descuento</th>
+                    <td>No aplica</td>       
+                    </tr>
+                    <tr>
+                    <th>Subtotal</th>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <th>Total</th>
+                    <td></td>      
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                </tbody>
+              </table>
+        </div>
+        <div class="buttons">
+            <button type="button" id="btnAdd">Añadir</button>
+            <button type="button" id="btnClear">Limpiar</button>
+            <button type="button" id="btnConfirm">Confirmar</button>
+        </div>
+        <div class="form-item">
+            <div class="input-label">Importe Recibido:</div>
+            <div class="input-field">
+                <input type="text" id="amount-received" name="amount-received" required>
+            </div>
+        </div>
+        
+        <div class="form-item">
+            <div class="input-label">Cambio:</div>
+            <div class="input-field">
+                <input type="text" id="change" name="change" readonly>
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>

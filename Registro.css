@@ -1,0 +1,88 @@
+/* Estilos generales comunes a todas las páginas */
+* {
+    padding: 8px;
+    margin: 0px;
+  }
+  
+  html {
+    background: linear-gradient(to bottom, #007bff, #00ff00);
+  }
+  
+  /* Estilos específicos para la página de registro */
+  .register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+  }
+  
+  .register-container {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 40%;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    align-items: center;
+  }
+  
+  /* Estilos para los campos del formulario */
+  input,
+  select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  /* Estilos para los mensajes de error */
+  .error {
+    color: red;
+    margin-top: 5px;
+    text-align: left;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .register-form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .register-form > div:nth-child(1),
+.register-form > div:nth-child(2),
+.register-form > div:nth-child(3) {
+    grid-column: span 1; 
+}

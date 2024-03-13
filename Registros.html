@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <title>Inventario - Drugstore Payment</title>
+    <title>Registro de Cliente</title>
+</head>
+<body>
+    <h1>Registro de Cliente</h1>
+    <form>
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre Completo:</label></td>
+                <td><input type="text" id="nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+                <td><label for="tipoDocumento">Tipo de Documento:</label></td>
+                <td>
+                    <select id="tipoDocumento" name="tipoDocumento" required>
+                        <option value="cedulaCiudadania">Cédula de Ciudadanía</option>
+                        <option value="cedulaExtranjeria">Cédula de Extranjería</option>
+                        <option value="pasaporte">Pasaporte</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="numeroDocumento">Número de Identificación:</label></td>
+                <td><input type="text" id="numeroDocumento" name="numeroDocumento" required></td>
+            </tr>
+            <tr>
+                <td><label for="direccion">Dirección:</label></td>
+                <td><input type="text" id="direccion" name="direccion" required></td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Número de Teléfono:</label></td>
+                <td><input type="tel" id="telefono" name="telefono" required></td>
+            </tr>
+        </table>
+        <div class="input-container"></div>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html>

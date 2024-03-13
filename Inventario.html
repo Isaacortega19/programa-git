@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Main.css">
+  <title>Inventario - Drugstore Payment</title>
+</head>
+<body>
+  <header>
+  </header>
+
+  <main>
+    <h1>Inventario</h1>
+    <div class="search-box">
+        <label for="search-option">Buscar productos por:</label>
+        <select id="search-option">
+            <option value="code">Código</option>
+            <option value="name">Nombre (A-Z)</option>
+        </select>
+        <input type="text" id="search" placeholder="Ingrese término de búsqueda">
+        <button class="search-button" onclick="buscarProducto()">Buscar</button>
+    </div>
+    <div class="action-buttons">
+        <button class="add-button" onclick="agregarProducto()">Añadir Producto</button>
+        <button class="edit-button" onclick="editarProducto()">Editar Producto</button>
+        <button class="delete-button" onclick="eliminarProducto()">Eliminar Producto</button>
+    </div>
+    <div>
+        <table border="1">
+            <thead>
+              <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Fecha de Abastecimiento</th>
+                <th>Descripción</th>
+              </tr>
+              <tr>
+                <th>11025</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>11036</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <tr>
+                <th>25631</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>       
+              </tr>
+              <tr>
+                <th>25831</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>       
+                </tr>
+                <tr>
+                <th>22731</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>
+                <th>25711</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>       
+                </tr>
+            </thead>
+            <tbody id="product-list">
+              
+          
+            </tbody>
+          </table>
+
+    </div>
+   
+  </main>
+
+  <footer>
+    <!-- Pie de página -->
+  </footer>
+</body>
+</html>

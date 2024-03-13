@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <script src="funciones.js"></script>
+  <title>Drugstore Payment</title>
+</head>
+<body class="login-page">
+  <main>
+    <div class = "login-form">
+      <div class=" logo container">
+        <img src="logo.png" alt="Drugstore Payment Logo" class="login-logo">
+        <h2>Iniciar Sesión</h2>
+        <form>
+          <input type="text" id="usuario" placeholder="Usuario" value="Isaac" required><br><br>
+          <input type="password" id="contrasena" placeholder=" Contraseña" value="Ort123" required><br><br>
+          <button type="button" onclick="iniciarSesion()"> Iniciar Sesión</button>
+        </form>
+        <p>¿No tienes una cuenta?<br> 
+          <a href="Registro.html">Registrate aquí</a></p><br>
+
+      </div>
+      
+     
+    </div>
+
+  </main>
+  <footer>
+    
+
+  </footer>
+  <script>
+    function iniciarSesion() {
+        var usuario = document.getElementById("usuario").value;
+        var contraseña = document.getElementById("contrasena").value;
+
+        if (usuario === "Isaac" && contraseña === "Ort123") {
+            alert("Bienvenido a Drugstore Payment");
+            window.location.href="Home.html";
+        } else {
+            alert("Usuario y/o contraseña incorrectos");
+        }
+    }
+  </script>
+</body>
+</html>

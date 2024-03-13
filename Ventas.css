@@ -1,0 +1,130 @@
+body {
+    font-family: "monserrat", sans-serif;
+    background-color: gray;
+}
+h1 {
+    text-align: center;
+    background-color: #00ff00;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: 600;
+}
+.banner {
+    padding: 10px;
+    text-align: center;
+    font-family: "Monserrat", sans-serif;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.form-item {
+    flex: 0 0 calc(20% - 10px); 
+    margin-right: 10px;
+    font-family: "monserrat", sans-serif;
+}
+.input-field-first input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 90%;
+}
+table {
+    border-collapse: collapse;
+    width: 60%;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 3%;
+}
+.table-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+}
+.table-container table{
+    width: 100%;
+    margin-bottom: 10px;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+th:first-child, td:first-child {
+    width: 20%;
+}
+.buttons {
+    text-align: right;
+    margin-top: -40px; 
+}
+
+.buttons button {
+    margin-left: 10px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s;
+}
+.buttons #btnAdd{
+    background-color: #007bff;
+}
+.buttons #btnConfirm{
+    background-color: greenyellow;
+}
+.buttons #btnClear{
+    background-color:#fe0000;
+}
+.buttons #btnAdd:hover {
+    background-color: #0056b3; 
+}
+.buttons #btnConfirm:hover{
+    background-color: green;
+}
+.buttons #btnClear:hover{
+    background-color: darkred;
+}
+
+.form-item {
+    flex: 0 0 calc(30% - 10px); 
+    margin-right: 30px;
+    font-family: "monserrat", sans-serif;
+}
+.input-field-amount-received input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+}
+#change {
+    background-color: #f2f2f2; 
+}
+.buttons{
+    text-align: right;
+    margin-top: -60;
+}
